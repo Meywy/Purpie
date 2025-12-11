@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "purpie",
+	"version": "${version}",
+	"name": "Purpie",
+	"description": "Hypixel Skyblock Mod with Many Qol Features by Meywy",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://meywy.dev",
+		"sources": "https://github.com/meywy/Purpie"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/purpie/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"dev.meywy.purpie.Purpie"
+		],
+		"fabric-datagen": [
+			"dev.meywy.purpie.PurpieDataGenerator"
+		],
+		"client": [
+			"dev.meywy.purpie.PurpieClient"
+		]
+	},
+	"mixins": [
+		"purpie.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.2",
+		"minecraft": "~1.21.8",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
